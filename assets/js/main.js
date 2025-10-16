@@ -24,6 +24,20 @@ const nunberFour = (Math.floor(Math.random() * 101))
 const nunberFive = (Math.floor(Math.random() * 101))
 
 console.log(nunberOne,nunberTwo,nunberThree,nunberFour,nunberFive );
+const nunberOneContainer = document.querySelector('div.nunberOneContainer');
+const nunberTwoContainer = document.querySelector('div.nunberTwoContainer');
+const nunberThreeContainer = document.querySelector('div.nunberThreeContainer');
+const nunberFourContainer = document.querySelector('div.nunberFourContainer');
+const nunberFiveContainer = document.querySelector('div.nunberFiveContainer');
+
+console.log(nunberOneContainer, nunberTwoContainer, nunberThreeContainer, nunberFourContainer, nunberFiveContainer)
+
+nunberOneContainer.innerHTML += nunberOne;
+nunberTwoContainer.innerHTML += nunberTwo;
+nunberThreeContainer.innerHTML += nunberThree;
+nunberFourContainer.innerHTML += nunberFour;
+nunberFiveContainer.innerHTML += nunberFive;
+
 
 //creo una variabile che si da un valore automaticamente che corrisponde ad un numero che varia da 1 a 100
 
