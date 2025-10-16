@@ -52,7 +52,14 @@ setTimeout(() =>{
 }, 30000);
 
 //appaiono invece 5 input in cui l'utente deve inserire i numeri che ha visto precedentemente
+//devo creare una variabile per contenere nodo del contenitore degli input
+const inputContainer = document.querySelector('.inputContainer');
 
+setTimeout(() =>{
+    inputContainer.style.display = 'block';
+
+}, 30000);
 
 //3 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+//mi prendo il bottone e aggiungo un event listner per esso in cui confronto i numeri inseriti con i numeri immagazzinati nelle variabili
 
