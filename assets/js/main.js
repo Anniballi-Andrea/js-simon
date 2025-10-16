@@ -22,6 +22,7 @@ const nunberTwo = (Math.floor(Math.random() * 101))
 const nunberThree = (Math.floor(Math.random() * 101))
 const nunberFour = (Math.floor(Math.random() * 101))
 const nunberFive = (Math.floor(Math.random() * 101))
+const numbers = [nunberOne, nunberTwo, nunberThree, nunberFour, nunberFive]
 
 //nell'html inserisco 5 contenitori dove far apparire quei valori random
 console.log(nunberOne,nunberTwo,nunberThree,nunberFour,nunberFive );
@@ -62,4 +63,24 @@ setTimeout(() =>{
 
 //3 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 //mi prendo il bottone e aggiungo un event listner per esso in cui confronto i numeri inseriti con i numeri immagazzinati nelle variabili
+const inputOne = document.getElementById('verifyOne');
+const inputTwo = document.getElementById('verifyTwo');
+const inputThree = document.getElementById('verifyThree');
+const inputFour = document.getElementById('verifyFour');
+const inputFive = document.getElementById('verifyFive');
+const Button = document.querySelector('button');
+const UserNunber = [];
 
+/*ora raggionaniamo un attimo:devo fare un confronto tra questi numeri e gli altri, se creo 2 array e li processo in un ciclo for posso 
+riuscire a confrontarli?
+
+//creo un ciclo for per arrai dei numeri random creando un numero [i]
+
+//metto un condizionale che se numero [i] è uguale ad uno dei 5 input (nunber[i] === inputOne ||nunber[i] === inputTwoo ecc)
+//allora mettimelo dentro un altro array di verifica
+//a quel punto dovrei avere 2 array:
+//il primo con tutti i numeri
+//il secondo con solo i numeri indovinati
+//quindi con un .length posso dire quanto è grande l'arrai dei numeri indovinati ed aggiungere anche i numeri utilizzando l'arrai stesso.
+
+*/
