@@ -121,6 +121,6 @@ Button.addEventListener('click', () => {
 
     }
     responseContainer.style.display = 'block';
-    responseContainer.innerHTML+= `<strong>hai indovinato ${userNunbers.length} numeri ${userNunbers.toString()} </strong>`
+    responseContainer.innerHTML+= `<strong>hai indovinato ${userNunbers.length} numeri ${userNunbers.toString()} <br> I numeri erano: ${nunbers}</strong>`
 
 })
