@@ -17,6 +17,14 @@ Se l’utente ha inserito qualcosa di non valido, segnaliamolo visivamente nel f
 
 //1 Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 30 secondi.
 
+const nunberOne = (Math.floor(Math.random() * 101))
+const nunberTwo = (Math.floor(Math.random() * 101))
+const nunberThree = (Math.floor(Math.random() * 101))
+const nunberFour = (Math.floor(Math.random() * 101))
+const nunberFive = (Math.floor(Math.random() * 101))
+
+console.log(nunberOne,nunberTwo,nunberThree,nunberFour,nunberFive );
+
 //creo una variabile che si da un valore automaticamente che corrisponde ad un numero che varia da 1 a 100
 
 
