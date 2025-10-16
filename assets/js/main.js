@@ -16,13 +16,14 @@ Se l’utente ha inserito qualcosa di non valido, segnaliamolo visivamente nel f
 //Tasks:
 
 //1 Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 30 secondi.
-
+//creo una variabile che si da un valore automaticamente che corrisponde ad un numero che varia da 1 a 100
 const nunberOne = (Math.floor(Math.random() * 101))
 const nunberTwo = (Math.floor(Math.random() * 101))
 const nunberThree = (Math.floor(Math.random() * 101))
 const nunberFour = (Math.floor(Math.random() * 101))
 const nunberFive = (Math.floor(Math.random() * 101))
 
+//nell'html inserisco 5 contenitori dove far apparire quei valori random
 console.log(nunberOne,nunberTwo,nunberThree,nunberFour,nunberFive );
 const nunberOneContainer = document.querySelector('div.nunberOneContainer');
 const nunberTwoContainer = document.querySelector('div.nunberTwoContainer');
@@ -38,17 +39,20 @@ nunberThreeContainer.innerHTML += nunberThree;
 nunberFourContainer.innerHTML += nunberFour;
 nunberFiveContainer.innerHTML += nunberFive;
 
-
-//creo una variabile che si da un valore automaticamente che corrisponde ad un numero che varia da 1 a 100
-
-
-
-//nell'html inserisco 5 contenitori dove far apparire quei valori random
-
 //creo una funzione con set timeout che applica ai contenitori il display:none per farli sparire
+//mi serve una variabile per far sparire il contenitore principale cosi da non inserire 2mila comandi
 
+const container = document.querySelector('.container');
+//console.log(container)
 
-//2 Dopo 30 secondi i numeri scompaiono e appaiono invece 5 input in cui l'utente deve inserire i numeri che ha visto precedentemente
+//2 Dopo 30 secondi i numeri scompaiono
+setTimeout(() =>{
+    container.style.display = 'none';
+
+}, 30000);
+
+//appaiono invece 5 input in cui l'utente deve inserire i numeri che ha visto precedentemente
+
 
 //3 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
